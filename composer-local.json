@@ -4,7 +4,7 @@
 	"license": "MIT",
 	"require": {
 		"greenpeace/planet4-master-theme": "dev-hide-page-title-in-actions",
-		"greenpeace/planet4-plugin-gutenberg-blocks": "dev-hide-page-title-in-actions",
+		"greenpeace/planet4-plugin-gutenberg-blocks": "dev-hide-page-title-in-actions"
 	},
 	"scripts": {
 		"site:custom": []

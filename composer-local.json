@@ -3,51 +3,11 @@
 	"description": "Greenpeace P4 test-telesto",
 	"license": "MIT",
 	"require": {
-		"greenpeace/planet4-master-theme": "7",
-		"greenpeace/planet4-plugin-gutenberg-blocks": "7",
-		"wpackagist-plugin/wp-stateless": "3.0.3"
+		"greenpeace/planet4-master-theme": "dev-hide-page-title-in-actions",
+		"greenpeace/planet4-plugin-gutenberg-blocks": "dev-hide-page-title-in-actions",
 	},
 	"scripts": {
 		"site:custom": []
 	},
-	"repositories": [
-		{
-			"type": "package",
-			"package": {
-				"name": "greenpeace/planet4-master-theme",
-				"type": "wordpress-theme",
-				"autoload": {
-					"psr-4": {
-						"P4\\MasterTheme\\": "src/"
-					}
-				},
-				"extra": {
-					"installer-paths": {
-						"vendor/plugins/{$name}/": [
-							"type:wordpress-plugin"
-						]
-					}
-				},
-				"version": 7,
-				"dist": {
-					"type": "zip",
-					"url": "https://storage.googleapis.com/planet4-packages/planet4-master-theme/2ebb045ad13c39388930a24c6208d9e1ffdaef53.zip"
-				}
-			}
-		},
-		{
-			"type": "package",
-			"package": {
-				"name": "greenpeace/planet4-plugin-gutenberg-blocks",
-				"type": "wordpress-plugin",
-				"autoload": null,
-				"extra": null,
-				"version": 7,
-				"dist": {
-					"type": "zip",
-					"url": "https://storage.googleapis.com/planet4-packages/planet4-plugin-gutenberg-blocks/70794e0985b529f149b4344d039a3da566262bdc.zip"
-				}
-			}
-		}
-	]
+	"repositories": []
 }

@@ -3,7 +3,7 @@
 	"description": "Greenpeace P4 test-telesto",
 	"license": "MIT",
 	"require": {
-		"greenpeace/planet4-master-theme": "dev-main",
+		"greenpeace/planet4-master-theme": "dev-cookies-playwright-text-small-fix",
 		"greenpeace/planet4-plugin-gutenberg-blocks": "dev-main"
 	},
 	"scripts": {

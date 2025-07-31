@@ -27,7 +27,7 @@ docker_auth: &docker_auth
 
 defaults: &defaults
   docker:
-    - image: greenpeaceinternational/p4-builder:node18
+    - image: greenpeaceinternational/p4-builder:latest
       auth:
         <<: *docker_auth
 

@@ -172,12 +172,15 @@ jobs:
       <<: *develop_environment
     <<: *deploy_steps
   create-test-user:
-    <<: *defaults
+    working_directory: ~/
+    docker:
+      - image: greenpeaceinternational/p4-builder:latest
+        auth:
+          <<: *docker_auth
     environment:
       <<: *common_environment
       <<: *develop_environment
       WORKFLOW_ID: << pipeline.parameters.unhold >>
-    working_directory: ~/
     steps:
       - checkout:
           path: /home/circleci/checkout
@@ -199,11 +202,14 @@ jobs:
           job_name: test-user-ready
 
   delete-test-user:
-    <<: *defaults
+    working_directory: ~/
+    docker:
+      - image: greenpeaceinternational/p4-builder:latest
+        auth:
+          <<: *docker_auth
     environment:
       <<: *common_environment
       <<: *develop_environment
-    working_directory: ~/
     steps:
       - checkout:
           path: /home/circleci/checkout

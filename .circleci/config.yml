@@ -38,6 +38,7 @@ job_environments:
     APP_HOSTPATH: test-telesto
     CONTAINER_PREFIX: planet4-test-telesto
     WP_DB_NAME_PREFIX: planet4-testtele_wordpress
+    GIT_REF: google-avatars-upgrade
   develop_environment: &develop_environment
     APP_ENVIRONMENT: development
     APP_HOSTNAME: www-dev.greenpeace.org

@@ -3,12 +3,32 @@
 	"description": "Greenpeace P4 test-telesto",
 	"license": "MIT",
 	"require": {
-		"greenpeace/planet4-master-theme": "dev-main"
+		"greenpeace/planet4-master-theme": "7"
 	},
 	"scripts": {
 		"install:plugin-yoast": "wp plugin install --activate https://storage.googleapis.com/planet4-3rdparty-plugins/wordpress-seo-premium-27.7.zip",
 		"site:custom": [
 			"@install:plugin-yoast"
 		]
-	}
+	},
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "greenpeace/planet4-master-theme",
+				"type": "wordpress-theme",
+				"autoload": {
+					"psr-4": {
+						"P4\\MasterTheme\\": "src/"
+					}
+				},
+				"extra": null,
+				"version": 7,
+				"dist": {
+					"type": "zip",
+					"url": "https://storage.googleapis.com/planet4-packages/planet4-master-theme/c92fbf3b4adcc32a09aea53395deda897eee84a9.zip"
+				}
+			}
+		}
+	]
 }
